@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PDFViewer</title>
+<script type="text/javascript" src="/static/js/pdfobject.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="static/css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="static/css/custom.css"/>
+
+</head>
+<body>
+	<div class="bottom-left">
+	<button class="btn-floating btn-large waves-effect waves-light red" onclick="goLeft()"><i class="material-icons">chevron_left</i></button>		
+	</div>
+	<div class="bottom-right">
+	<a class="btn-floating btn-large waves-effect waves-light red" onclick="goRight()"><i class="material-icons">chevron_right</i></a>		
+	</div>
+	<div id="pdfwindow"></div>
+	<div id="contents" class="hide">{{contents}}</div>
+	
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="static/js/materialize.js"></script>
+<script type="text/javascript" src="/static/js/custom.js"></script>
+</html>
